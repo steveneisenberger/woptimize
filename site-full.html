@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woptimize — Your work, optimized</title>
+<meta name="description" content="Woptimize builds automations and AI systems around the way your team already works. No platform migrations, no retraining — just the manual steps removed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F5F0;
+  --ink:#1B2230;
+  --ink-soft:#4B5563;
+  --line:#D9D7CF;
+  --blue:#1E5F8C;
+  --blue-deep:#154766;
+  --mark:#F3E7B8;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* header */
+header{padding:26px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:26px;width:auto;display:block}
+.logo img.word{height:17px}
+nav a{color:var(--ink-soft);text-decoration:none;margin-left:26px;font-size:15px}
+nav a:hover{color:var(--ink)}
+nav .cta{color:var(--blue);font-weight:600}
+
+/* hero */
+.hero{padding:56px 20px 24px}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-.03em;font-weight:600;margin:0 0 22px;max-width:14ch}
+.hero p.lede{font-size:clamp(18px,2.2vw,22px);line-height:1.45;max-width:38ch;color:var(--ink-soft);margin:0 0 30px}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:14px 22px;border-radius:6px;font-weight:600;font-size:16px}
+.btn:hover{background:var(--blue-deep)}
+.btn.ghost{background:transparent;color:var(--blue);border:1.5px solid var(--blue);margin-left:10px}
+.btn.ghost:hover{background:#E9EEF3}
+
+/* workflow strip — the one memorable element */
+.flow{margin:56px 0 0;padding:34px 0 40px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.flow .cap{font-size:15px;color:var(--ink-soft);margin:0 0 22px;max-width:60ch}
+.steps{display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding-bottom:6px}
+.step{position:relative;flex:1 0 180px;padding:0 18px 0 0}
+.step + .step::before{content:"";position:absolute;left:-18px;top:21px;width:18px;height:1.5px;background:var(--ink)}
+.step .who{font-size:13px;color:var(--ink-soft);margin:0 0 8px}
+.step .what{font-weight:600;font-size:16px;line-height:1.3;margin:0;padding:10px 12px;border:1.5px solid var(--ink);border-radius:6px;background:#fff}
+.step.auto .what{border-color:var(--blue);background:var(--mark);position:relative}
+.step.auto .who{color:var(--blue);font-weight:600}
+.step.auto .what::after{content:"handled for you";position:absolute;top:-11px;right:10px;font-size:11px;font-weight:600;background:var(--blue);color:#fff;padding:2px 7px;border-radius:4px}
+.flow .legend{margin:22px 0 0;font-size:15px;color:var(--ink-soft)}
+.flow .legend i{display:inline-block;width:14px;height:14px;background:var(--mark);border:1.5px solid var(--blue);border-radius:3px;vertical-align:-2px;margin-right:6px}
+
+/* sections */
+section{padding:72px 0}
+section h2{font-size:clamp(28px,3.6vw,38px);letter-spacing:-.02em;line-height:1.15;font-weight:600;margin:0 0 28px;max-width:22ch}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px 56px}
+.cols h3{font-size:19px;margin:0 0 8px;font-weight:600}
+.cols p{margin:0;color:var(--ink-soft)}
+.list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.list li{padding:18px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr);gap:20px}
+.list li strong{font-weight:600}
+.list li span{color:var(--ink-soft)}
+
+/* principles band */
+.band{background:var(--ink);color:#E9E7DF;padding:64px 0}
+.band h2{color:#fff}
+.band p{max-width:62ch;margin:0 0 16px;color:#C9C6BB;font-size:18px}
+.band p:last-child{margin:0}
+
+/* contact */
+.contact .big{font-size:clamp(22px,3vw,30px);font-weight:600;letter-spacing:-.01em;text-decoration:none;color:var(--blue)}
+.contact p{max-width:58ch;color:var(--ink-soft)}
+
+footer{padding:28px 0 44px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (max-width:720px){
+  nav a:not(.cta){display:none}
+  .cols{grid-template-columns:1fr}
+  .list li{grid-template-columns:1fr;gap:4px}
+  .btn.ghost{margin:10px 0 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Woptimize home"><img src="mark.png" alt=""><img class="word" src="wordmark.png" alt="Woptimize"></a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#build">What we build</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <h1>Your work, optimized.</h1>
+    <p class="lede">We don't replace how your team works. We build automations and AI systems around the workflow you already have, so the manual steps disappear and everything else stays familiar.</p>
+    <a class="btn" href="#contact">Book a workflow review</a>
+    <a class="btn ghost" href="#how">See how it works</a>
+  </div>
+
+  <div class="flow">
+    <div class="wrap">
+      <p class="cap">A typical result. Same process, same people, same software. The highlighted steps now run on their own.</p>
+      <div class="steps" aria-label="Example workflow">
+        <div class="step"><p class="who">Customer</p><p class="what">Sends a request</p></div>
+        <div class="step auto"><p class="who">Automated</p><p class="what">Logged, categorized, and routed to the right person</p></div>
+        <div class="step"><p class="who">Your team</p><p class="what">Reviews and makes the call</p></div>
+        <div class="step auto"><p class="who">Automated</p><p class="what">Records the decision in your existing system</p></div>
+        <div class="step auto"><p class="who">Automated</p><p class="what">Sends the follow-up and tracks the response</p></div>
+      </div>
+      <p class="legend"><i></i>Steps we automate. The decisions stay with your team.</p>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How an engagement works</h2>
+      <div class="cols">
+        <div>
+          <h3>Map the work as it happens today</h3>
+          <p>We sit with the people doing the job and document the real workflow, including the workarounds, the copy-paste, and the "someone just remembers to do it" steps.</p>
+        </div>
+        <div>
+          <h3>Automate the steps that don't need a person</h3>
+          <p>Data entry, routing, status checks, reminders, reports. We connect the tools you already pay for and add AI where judgment calls can be drafted for a human to approve.</p>
+        </div>
+        <div>
+          <h3>Hand it back, documented and owned by you</h3>
+          <p>You get the system, the documentation, and a plain-language runbook. Nothing is locked to us, and your team can see exactly what runs and when.</p>
+        </div>
+        <div>
+          <h3>Measure what changed</h3>
+          <p>Every build starts with a baseline: hours per week, error rate, response time. We report against that number so you know what the work actually returned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="build">
+    <div class="wrap">
+      <h2>What we build</h2>
+      <ul class="list">
+        <li><strong>Intake and routing</strong><span>Emails, forms, calls, and messages captured, classified, and sent to the right queue with the details already filled in.</span></li>
+        <li><strong>Status tracking and follow-up</strong><span>Open items that chase themselves: authorizations, invoices, applications, tickets. Reminders go out and escalate without anyone keeping a list.</span></li>
+        <li><strong>Reporting and dashboards</strong><span>The numbers you check every morning pulled automatically from your systems and delivered where you already look.</span></li>
+        <li><strong>AI assistants for repetitive judgment</strong><span>Drafting replies, summarizing records, flagging exceptions. The assistant prepares the work; a person approves it.</span></li>
+        <li><strong>System-to-system connections</strong><span>Getting data from one platform into another without re-keying, whether the tools have an API or not.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="band" id="about">
+    <div class="wrap">
+      <h2>Built by someone who runs operations, not just software</h2>
+      <p>Woptimize was started by Steven Eisenberger, who manages day-to-day operations for a group of healthcare practices: billing, payroll, vendors, IT, and staff. The automations we build are the ones we built first for ourselves, because the manual version was eating the team's week.</p>
+      <p>That means we know what it is like to introduce a new system to a busy staff, and why the ones that survive are the ones that fit the existing routine.</p>
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Start with a workflow review</h2>
+      <p>Send a short note about the process that takes the most time or causes the most mistakes. We'll reply with whether it's a good fit for automation, what it would involve, and a rough scope. No commitment either way.</p>
+      <p><a class="big" href="mailto:hello@woptimize.ai">hello@woptimize.ai</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Woptimize</span>
+    <span>Your work, optimized.</span>
+  </div>
+</footer>
+
+</body>
+</html>

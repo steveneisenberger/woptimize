@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woptimize — Your work, optimized</title>
+<meta name="description" content="Woptimize builds automations and AI systems around the way your team already works. Full site coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F6F5F0;--ink:#1B2230;--ink-soft:#4B5563;--line:#D9D7CF;--blue:#1E5F8C;--blue-deep:#154766;--mark:#F3E7B8}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+a{color:var(--blue)}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+header{padding:26px 20px}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:26px;width:auto;display:block}
+.logo img.word{height:17px}
+.mark-big{width:clamp(96px,14vw,150px);height:auto;display:block;margin:0 0 28px}
+main{flex:1;display:flex;align-items:center}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 60px;width:100%}
+h1{font-size:clamp(44px,8vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:600;margin:0 0 24px}
+h1 mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit;padding:0 .04em}
+p{margin:0 0 18px;color:var(--ink-soft);max-width:48ch;font-size:clamp(17px,2vw,20px)}
+.soon{display:inline-block;font-size:14px;font-weight:600;color:var(--blue);border:1.5px solid var(--blue);border-radius:999px;padding:4px 12px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:14px 22px;border-radius:6px;font-weight:600;font-size:16px;margin-top:10px}
+.btn:hover{background:var(--blue-deep)}
+footer{padding:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+<header><a class="logo" href="/" aria-label="Woptimize home"><img src="mark.png" alt=""><img class="word" src="wordmark.png" alt="Woptimize"></a></header>
+<main>
+  <div class="wrap">
+    <img class="mark-big" src="mark.png" alt="">
+    <span class="soon">Full site coming soon</span>
+    <h1>Your work, <mark>optimized.</mark></h1>
+    <p>We build automations and AI systems around the workflow your team already has. The manual steps disappear; everything else stays familiar.</p>
+    <p>Have a process that eats your week? Tell us about it and we'll reply with whether it's a fit, what it would involve, and a rough scope.</p>
+    <a class="btn" href="mailto:hello@woptimize.ai?subject=Workflow%20review">Email hello@woptimize.ai</a>
+  </div>
+</main>
+<footer><span>© 2026 Woptimize</span><span>New York</span></footer>
+</body>
+</html>
